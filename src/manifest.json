@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "CDA Linker",
+  "version": "1.0.0",
+  "description": "Shortens links for CDA's",
+  "browser_action": {
+    "default_popup": "/popout/popout.html"
+  },
+  "permissions": ["activeTab", "storage", "clipboardWrite"]
+}
