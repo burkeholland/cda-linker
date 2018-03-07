@@ -6,7 +6,7 @@
 
 #### From Package
 
-1. `git clone git@github.com:clarkio/cda-linker.git`
+1. `git clone git@github.com:burkeholland/cda-linker.git`
 2. In Chrome go to [chrome://extensions](chrome://extensions)
 3. Check the "Developer mode" option in the top-right corner
 4. Find the version you want of the packaged extension in the folder `/cda-linker/extension` found within the repository 
@@ -15,7 +15,7 @@
 
 #### From Source
 
-1. `git clone git@github.com:clarkio/cda-linker.git`
+1. `git clone git@github.com:burkeholland/cda-linker.git`
 2. In Chrome go to [chrome://extensions](chrome://extensions)
 3. Check the "Developer mode" option in the top-right corner
 4. Click the "Load unpacked extension" button
