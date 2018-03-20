@@ -29,6 +29,11 @@
 
   function shortenURL() {
     let baseUrl = $urlToShorten.val();
+
+    //remove the local (hardcoded for en-us)
+    const regex = /\/en-us\//g;
+    baseUrl = baseUrl.replace(regex,'/');;
+    
     let separator = baseUrl.indexOf('?') > 0 ? '&' : '?';
 
     let hash = '';
