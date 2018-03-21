@@ -29,6 +29,12 @@
 
   function shortenURL() {
     let baseUrl = $urlToShorten.val();
+
+    //remove locale in microsoft.com/xx-xx/ style URL's
+    const regex = /microsoft.com\/\w{2}-\w{2}\//g;
+    const subst = 'microsoft.com/';
+    baseUrl = baseUrl.replace(regex,subst);
+
     let separator = baseUrl.indexOf('?') > 0 ? '&' : '?';
 
     let hash = '';
