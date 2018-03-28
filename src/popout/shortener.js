@@ -38,7 +38,7 @@
       baseUrl = baseUrl.replace(hash, '');
     }
 
-    let fullURL = `${baseUrl}${separator}WT.mc_id=${$event.val()}-${$channel.val()}-${$alias.val()}${hash}`;
+    let fullURL = `${baseUrl}${separator}wt.mc_id=${$event.val()}-${$channel.val()}-${$alias.val()}${hash}`;
 
     fetch('http://cda.ms/save', {
       method: 'POST',
