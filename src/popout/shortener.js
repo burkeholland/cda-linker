@@ -54,7 +54,7 @@
         return response.json();
       })
       .then(json => {
-        $shortenedLink.el.href = `http://${json.url}`;
+        $shortenedLink.el.href = `${json.url}`;
         $shortenedLink.html(json.url);
 
         $longLink.html(fullURL);
