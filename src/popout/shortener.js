@@ -40,7 +40,7 @@
 
     let fullURL = `${baseUrl}${separator}WT.mc_id=${$event.val()}-${$channel.val()}-${$alias.val()}${hash}`;
 
-    fetch('http://cda.ms/save', {
+    fetch('https://cda.ms/save', {
       method: 'POST',
       body: JSON.stringify({
         url: fullURL
