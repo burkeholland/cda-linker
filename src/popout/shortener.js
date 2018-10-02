@@ -38,7 +38,7 @@
       baseUrl = baseUrl.replace(hash, '');
     }
 
-    let fullURL = `${baseUrl}${separator}WT.mc_id=${$event.val()}-${$channel.val()}-${$alias.val()}${hash}`;
+    let fullURL = `${baseUrl}${separator}wt.mc_id=${$event.val()}-${$channel.val()}-${$alias.val()}${hash}`;
 
     fetch('https://cda.ms/save', {
       method: 'POST',
@@ -54,7 +54,7 @@
         return response.json();
       })
       .then(json => {
-        $shortenedLink.el.href = `http://${json.url}`;
+        $shortenedLink.el.href = `${json.url}`;
         $shortenedLink.html(json.url);
 
         $longLink.html(fullURL);
